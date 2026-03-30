@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minchul Kim | Senior Materials Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-xl font-bold tracking-tighter uppercase">MK <span class="text-blue-400">Portfolio</span></div>
+        <div class="space-x-6 hidden md:flex text-sm font-medium text-slate-400">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+            Hi, I'm <span class="gradient-text">Minchul Kim</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 mb-8 leading-relaxed">
+            Senior Materials Engineer & MIM/CIM Specialist<br>
+            <span class="text-lg">14+ years of expertise in high-precision scale-up and advanced manufacturing.</span>
+        </p>
+        <div class="flex justify-center space-x-4">
+            <a href="mailto:your-email@example.com" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold transition">Contact Me</a>
+            <a href="#projects" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-full font-bold transition">View Projects</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 border-b border-slate-800 pb-4">About Me</h2>
+            <p class="text-lg text-slate-300 leading-relaxed">
+                재료 공학 분야에서 14년 이상의 경력을 쌓아온 전문가로서, 특히 **Metal Injection Molding(MIM)** 및 **Ceramic Injection Molding(CIM)** 공정의 스케일업과 최적화에 강점을 가지고 있습니다. 티타늄 및 알루미늄 합금 연구부터 AI와 로보틱스를 결합한 차세대 제조 공정 개발까지, 기술적 한계를 극복하는 솔루션을 제공합니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10 border-b border-slate-800 pb-4">Core Expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-slate-800 rounded-2xl card-hover">
+                <i class="fa-solid fa-microchip text-blue-400 text-2xl mb-4"></i>
+                <h3 class="font-bold mb-2">MIM / CIM</h3>
+                <p class="text-sm text-slate-400">High-precision scale-up and sintering optimization.</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-2xl card-hover">
+                <i class="fa-solid fa-flask text-purple-400 text-2xl mb-4"></i>
+                <h3 class="font-bold mb-2">Metallurgy</h3>
+                <p class="text-sm text-slate-400">Titanium, Aluminum alloys & Oxide reduction.</p>
+            </div>
+            <div class="p-6 bg-slate-800 rounded-2xl card-hover">
+                <i class="fa-solid fa-robot text-green-400 text-2xl mb-4"></i>
+                <h3 class="font-bold mb-2">AI & Robotics</h3>
+                <p class="text-sm text-slate-400">ESP32 integration and AI-driven automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 border-b border-slate-800 pb-4">Major Projects</h2>
+            <div class="space-y-8">
+                <div class="group relative p-8 bg-slate-800 rounded-3xl border border-slate-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-bold mb-2">Advanced Powder-Based Manufacturing</h3>
+                    <p class="text-slate-400">Strategic manufacturing innovation focusing on Titanium and Aluminum alloy sintering mechanisms.</p>
+                </div>
+                <div class="group relative p-8 bg-slate-800 rounded-3xl border border-slate-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-bold mb-2">AI-Integrated Robot 'Riley'</h3>
+                    <p class="text-slate-400">Development of an interactive hardware companion utilizing ESP32, speech recognition, and gesture control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Minchul Kim. Built with Tailwind CSS & Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
