@@ -10,153 +10,289 @@
         html { scroll-behavior: smooth; }
         body { background-color: #0f172a; color: #f8fafc; }
         .gradient-text {
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            background: linear-gradient(90deg, #38bdf8, #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
-        .section-padding { padding: 80px 24px; }
+        .card-hover:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-padding { padding: 100px 24px; }
+        .nav-link { position: relative; }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(to right, #38bdf8, #a78bfa);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after { width: 100%; }
     </style>
 </head>
 <body class="font-sans antialiased text-slate-300">
 
-    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800">
-        <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter uppercase text-white">MK <span class="text-blue-400">Expert</span></div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-lg z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-white">
+                Minchul <span class="text-violet-400">Kim</span>
+            </div>
             <div class="space-x-8 hidden md:flex text-sm font-medium">
-                <a href="#about" class="hover:text-blue-400 transition">About</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#research" class="hover:text-blue-400 transition">Research</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#experience" class="nav-link hover:text-white transition">Experience</a>
+                <a href="#projects" class="nav-link hover:text-white transition">Key Projects</a>
+                <a href="#research" class="nav-link hover:text-white transition">Patents & Research</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center">
+    <!-- Hero -->
+    <header class="pt-40 pb-24 px-6 max-w-5xl mx-auto text-center">
         <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white">
             Hi, I'm <span class="gradient-text">Minchul Kim</span>
         </h1>
-        <p class="text-xl md:text-2xl text-slate-400 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Senior Materials Engineer specializing in <span class="text-white">MIM/CIM Scale-up</span>.<br>
-            Over 14 years of driving innovation in advanced powder metallurgy.
+        <p class="text-2xl md:text-3xl text-slate-400 mb-8">
+            Senior Materials Engineer<br>
+            <span class="text-white">MIM/CIM Commercialization Expert</span>
         </p>
-        <div class="flex flex-wrap justify-center gap-4 text-sm">
-            <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+        <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-10">
+            14+ years leading high-solid-loading feedstock development and scale-up in automotive (IATF 16949) and medical (ISO 13485) industries.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:kimminchulyo@gmail.com" 
+               class="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-2xl border border-slate-700 transition">
                 <i class="fa-solid fa-envelope text-blue-400"></i>
-                <span>minchul.kim.mat@gmail.com</span>
-            </div>
-            <div class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
-                <i class="fa-solid fa-phone text-green-400"></i>
-                <span>+1 302-310-8508</span>
-            </div>
+                <span>kimminchulyo@gmail.com</span>
+            </a>
+            <a href="tel:+13024908503" 
+               class="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-2xl border border-slate-700 transition">
+                <i class="fa-solid fa-phone text-emerald-400"></i>
+                <span>+1 (302) 490-8503</span>
+            </a>
         </div>
     </header>
 
+    <!-- About -->
     <section id="about" class="section-padding bg-slate-900/50">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-white flex items-center gap-3">
-                <span class="w-8 h-1 bg-blue-500 rounded-full"></span> Career Overview
+            <h2 class="text-4xl font-bold mb-10 text-white flex items-center gap-4">
+                <span class="w-10 h-0.5 bg-gradient-to-r from-blue-400 to-violet-400"></span>
+                Professional Summary
             </h2>
-            <p class="text-lg leading-relaxed mb-6">
-                As a Senior Engineer with a Master's degree in Materials Science and over 14 years of experience, I possess exceptional expertise in the commercialization and mass-production optimization of high-precision <strong>Metal and Ceramic Injection Molding (MIM/CIM)</strong> processes. I have spearheaded the development of innovative manufacturing solutions utilizing difficult-to-machine materials and high-performance powders, including Titanium (Ti), Aluminum (Al), and Zirconia (ZrO2).
-            </p>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
-                    <h4 class="font-bold text-blue-400 mb-1">Education</h4>
-                    <p class="text-sm">Yeungnam University - M.S. in Materials Science</p>
+            <div class="prose prose-invert max-w-none text-lg leading-relaxed">
+                <p>
+                    Senior Materials Engineer with 14+ years of experience in <strong>Metal Injection Molding (MIM)</strong> and 
+                    <strong>Ceramic Injection Molding (CIM)</strong> commercialization. 
+                    Specialized in formulating and scaling high-solid-loading (45–67 vol%) metal and ceramic feedstocks.
+                </p>
+                <p>
+                    Expertise directly transferable to battery electrode slurries, ceramic-coated separators, and solid-state electrolytes. 
+                    Proven track record in building greenfield production lines, achieving FDA/CE clearance, and driving yield improvements in regulated industries.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h4 class="font-semibold text-blue-400 mb-2">Education</h4>
+                    <p class="text-sm">M.S. Materials Science & Engineering</p>
+                    <p class="text-xs text-slate-400">Yeungnam University, Korea (2011)</p>
                 </div>
-                <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
-                    <h4 class="font-bold text-blue-400 mb-1">Location</h4>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h4 class="font-semibold text-blue-400 mb-2">Location</h4>
                     <p class="text-sm">Bear, Delaware, USA</p>
                 </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <h4 class="font-semibold text-blue-400 mb-2">Patents</h4>
+                    <p class="text-sm">5 Korean Patents Granted</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section-padding max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-white text-center">Key Technical Innovations</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            
-            <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
-                <div class="bg-slate-700 h-48 flex items-center justify-center overflow-hidden relative">
-                    <i class="fa-solid fa-microchip text-5xl text-slate-500"></i>
-                    <span class="absolute text-xs uppercase tracking-widest text-slate-400 mt-20 font-bold">Pure Al MIM Image Placeholder</span>
-                </div>
-                <div class="p-8">
-                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Advanced Sintering</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-4 text-white">Pure Al MIM Technology</h3>
-                    <ul class="text-sm space-y-2 text-slate-400">
-                        <li>• Achieved 99.0% density via unique additive systems</li>
-                        <li>• Low-temperature sintering process optimization</li>
-                        <li>• High thermal conductivity & lightweight solution</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
-                <div class="bg-slate-700 h-48 flex items-center justify-center overflow-hidden relative">
-                    <i class="fa-solid fa-atom text-5xl text-slate-500"></i>
-                    <span class="absolute text-xs uppercase tracking-widest text-slate-400 mt-20 font-bold">Ti-Fe MIM Image Placeholder</span>
-                </div>
-                <div class="p-8">
-                    <span class="text-purple-400 text-xs font-bold uppercase tracking-widest">Alloy Development</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-4 text-white">Ti-Fe Based Alloy MIM</h3>
-                    <ul class="text-sm space-y-2 text-slate-400">
-                        <li>• Oxygen-controlled Ti sintering mechanism</li>
-                        <li>• High-strength Ti-Fe binary alloy development</li>
-                        <li>• Cost-effective alternative for aerospace and medical parts</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="research" class="section-padding bg-slate-900/50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-10 text-white">Patents & Publications</h2>
-            
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <div class="text-blue-500"><i class="fa-solid fa-certificate text-xl"></i></div>
+    <!-- Experience -->
+    <section id="experience" class="section-padding max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-white text-center">Professional Experience</h2>
+        
+        <div class="space-y-16">
+            <div>
+                <div class="flex justify-between items-start mb-4">
                     <div>
-                        <h4 class="font-bold text-white uppercase text-sm tracking-tight">Main Patents</h4>
-                        <p class="text-sm mt-1">Method for Sintering Aluminum or Aluminum Alloy Molded Bodies (JP/KR/US/EU)</p>
-                        <p class="text-sm">Manufacture Method of Sintered Aluminum Body and Feedstock (JP/KR/US/EU)</p>
+                        <h3 class="text-xl font-bold">Plant General Manager – MIM Production Line</h3>
+                        <p class="text-blue-400">AUFlex Co., Ltd., Korea</p>
+                    </div>
+                    <p class="text-sm text-slate-400">Jul 2020 – Jun 2023</p>
+                </div>
+                <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                    <li>Built greenfield 200 kg/batch MIM facility from foundation to full production</li>
+                    <li>Scaled lab recipes (100 g) to 250 kg commercial batches with ±1% consistency</li>
+                    <li>Increased first-pass yield from 78% to 95% through SPC programs</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Medical Device Development Team Senior Engineer</h3>
+                        <p class="text-blue-400">Dentium / Genoss / Artificial Organ Research Center, Korea</p>
+                    </div>
+                    <p class="text-sm text-slate-400">Mar 2018 – Jul 2020</p>
+                </div>
+                <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                    <li>Led ISO 13485-certified commercialization of MIM/CIM orthodontic and implant components</li>
+                    <li>Developed 50–62 vol% ceramic feedstocks for complex geometries</li>
+                    <li>Secured FDA clearance and CE marking for Class II medical devices</li>
+                    <li>Developed Titanium Powder Manufacturing Process using Gas Atomization</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Mass Development Team Leader</h3>
+                        <p class="text-blue-400">Korea PIM Co., Ltd. (Tier-1 Supplier to Hyundai Motor Group)</p>
+                    </div>
+                    <p class="text-sm text-slate-400">Nov 2013 – Mar 2018</p>
+                </div>
+                <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                    <li>Managed APQP/PPAP for 30+ automotive powertrain & turbocharger parts (IATF 16949)</li>
+                    <li>Invented high-loading MIM binder system (55–67 vol%) — Korean Patent</li>
+                    <li>Reduced scrap by 35% through DOE-optimized processes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section id="projects" class="section-padding bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-white text-center">Key Technical Projects</h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Pure Al MIM -->
+                <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
+                    <div class="h-64 bg-gradient-to-br from-blue-900 to-slate-900 flex items-center justify-center relative">
+                        <i class="fa-solid fa-cube text-8xl text-blue-400/30"></i>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="px-4 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-full">2026</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-white">High-Density Pure Al MIM (99.5%)</h3>
+                        <p class="text-slate-400 mb-6">
+                            Developed additive-free 99.5% pure aluminum MIM process achieving ≥97% relative density at 20–160 kg industrial batch scale.
+                            Expected thermal conductivity approaching <strong>228 W/m·K</strong> — ideal for EV/ADAS thermal management.
+                        </p>
+                        <ul class="text-sm space-y-3 text-slate-400">
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Kinetic-mechanical oxide disruption via super-solidus liquid phase sintering (SLPS)</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Critical particle size: D<sub>50</sub> ≥ 11 μm</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Excellent post-processing (anodizing, laser/rod welding)</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <hr class="border-slate-800">
 
-                <div class="flex gap-4">
-                    <div class="text-purple-500"><i class="fa-solid fa-book text-xl"></i></div>
-                    <div>
-                        <h4 class="font-bold text-white uppercase text-sm tracking-tight">Publications</h4>
-                        <p class="text-sm mt-1 italic">"The Sintering Behavior of pure-Al Powder Compacts by using low melting point additives" (Journal of Korea Powder Metallurgy Institute)</p>
-                        <p class="text-sm italic">"Oxygen Scavenging Reaction and Mechanical Properties of TiH2-Fe Compacts" (World Congress on Powder Metallurgy)</p>
+                <!-- Ti-Fe MIM -->
+                <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
+                    <div class="h-64 bg-gradient-to-br from-violet-900 to-slate-900 flex items-center justify-center relative">
+                        <i class="fa-solid fa-atom text-8xl text-violet-400/30"></i>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="px-4 py-1 bg-violet-500/10 text-violet-400 text-xs font-bold rounded-full">2026</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-white">High-Density Ti-Fe MIM using TiH₂-Fe</h3>
+                        <p class="text-slate-400 mb-6">
+                            Cost-effective Ti MIM process achieving ≥97% relative density at 24 kg batch scale <strong>without HIP or external hydrogen</strong>.
+                        </p>
+                        <ul class="text-sm space-y-3 text-slate-400">
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> In-situ dehydrogenation of TiH₂ + transient liquid phase sintering with Fe</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> α+β microstructure with suppressed grain boundary cracking</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Significant cost reduction vs. traditional gas-atomized spherical Ti powder</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding text-center">
+    <!-- Patents & Publications -->
+    <section id="research" class="section-padding max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-white text-center">Patents & Publications</h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Patents -->
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-amber-400">
+                    <i class="fa-solid fa-certificate"></i> Patents (5 Granted in Korea)
+                </h3>
+                <div class="space-y-6 text-sm">
+                    <div class="border-l-2 border-amber-400 pl-6">
+                        <p>KR10-1626878 (2016) — Binder Composition for Metal Injection Molding</p>
+                    </div>
+                    <div class="border-l-2 border-amber-400 pl-6">
+                        <p>KR10-1649584 (2016) — Heat-resistant Parts Using Metal Granule Powder</p>
+                    </div>
+                    <div class="border-l-2 border-amber-400 pl-6">
+                        <p>KR10-1522440 (2015) — Method for Joining Ceramic Materials</p>
+                    </div>
+                    <div class="border-l-2 border-amber-400 pl-6">
+                        <p>KR10-1434971 (2014) — Al₂O₃ Composite Nozzle for Spinning Processing</p>
+                    </div>
+                    <div class="border-l-2 border-amber-400 pl-6">
+                        <p>KR10-1218968 (2013) — Anode Material for Solid Oxide Fuel Cells</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication -->
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-sky-400">
+                    <i class="fa-solid fa-book"></i> Publication
+                </h3>
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <p class="italic text-slate-300">
+                        "Fabrication of anode support for solid oxide fuel cell using zirconium hydroxide as a pore former"
+                    </p>
+                    <p class="text-sm text-slate-400 mt-6">
+                        Journal of Power Sources 195 (2010)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-slate-900/50 text-center">
         <div class="max-w-2xl mx-auto">
-            <h2 class="text-4xl font-bold mb-6 text-white">Get In Touch</h2>
-            <p class="text-slate-400 mb-10">For professional collaborations or technical inquiries, please feel free to reach out via the contact information below.</p>
-            <div class="flex flex-col gap-4 items-center">
-                <a href="mailto:minchul.kim.mat@gmail.com" class="text-2xl font-bold text-blue-400 hover:underline">minchul.kim.mat@gmail.com</a>
-                <p class="text-xl text-slate-400">+1 302-310-8508</p>
-                <div class="flex gap-6 mt-6">
-                    <a href="https://linkedin.com" class="text-slate-500 hover:text-white transition text-2xl"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com" class="text-slate-500 hover:text-white transition text-2xl"><i class="fa-brands fa-github"></i></a>
+            <h2 class="text-4xl font-bold mb-6 text-white">Let's Connect</h2>
+            <p class="text-slate-400 mb-12">
+                Open to technical collaborations, consulting, or opportunities in advanced materials and battery/EV supply chain.
+            </p>
+            
+            <div class="flex flex-col items-center gap-6">
+                <a href="mailto:kimminchulyo@gmail.com" 
+                   class="text-3xl font-medium text-blue-400 hover:text-blue-300 transition">
+                    kimminchulyo@gmail.com
+                </a>
+                <p class="text-2xl text-slate-400">+1 (302) 490-8503</p>
+                
+                <div class="flex gap-8 mt-8">
+                    <a href="#" class="text-4xl text-slate-500 hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="text-4xl text-slate-500 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 border-t border-slate-900 text-center text-slate-500 text-xs">
-        <p>&copy; 2026 Minchul Kim. All rights reserved.</p>
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2026 Minchul Kim. All rights reserved.</p>
+        <p class="mt-2 text-xs">Bear, Delaware, USA</p>
     </footer>
 
 </body>
