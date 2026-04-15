@@ -215,7 +215,69 @@
             </div>
         </div>
     </section>
+    <!-- moldflow-simulation Projects -->
+</div>
+            </div>
+            <div class="bg-slate-800/50 rounded-3xl p-8 border border-slate-700 card-hover transition-all">
+                <div class="flex flex-col lg:flex-row gap-10">
+                    <div class="lg:w-1/2">
+                        <img src="simulation_result.png" alt="MIM-Ops Simulation Analysis" class="rounded-2xl shadow-2xl border border-slate-600 w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="lg:w-1/2 flex flex-col justify-center">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cloud-Native CAE</span>
+                            <span class="bg-purple-500/20 text-purple-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">OpenFOAM</span>
+                        </div>
+                        
+                        <h3 class="text-3xl font-bold mb-4 gradient-text">MIM-Ops Pro v3.0</h3>
+                        
+                        <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                            An automated flow simulation pipeline for **Metal Injection Molding (MIM)**. 
+                            This system integrates **OpenFOAM** with **GitHub Actions** to perform high-performance 3D filling analysis in the cloud. 
+                            Features an interactive Streamlit dashboard with real-time VTK visualization and AI-driven process optimization.
+                        </p>
 
+                        <ul class="text-slate-500 mb-8 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-blue-500 text-sm"></i>
+                                <span>Automated Cloud Computing via GitHub Actions</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-blue-500 text-sm"></i>
+                                <span>Interactive 3D Visualization (Plotly & PyVista)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-blue-500 text-sm"></i>
+                                <span>Real-time Process Parameter Monitoring</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://openfoam-injection-automation.streamlit.app/" 
+                               target="_blank"
+                               class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-xl text-white font-semibold transition-all shadow-lg shadow-blue-900/20">
+                                <i class="fa-solid fa-rocket"></i>
+                                <span>Launch Live Demo</span>
+                            </a>
+                            <a href="https://github.com/workshopcompany/OpenFOAM-Injection-Automation" 
+                               target="_blank"
+                               class="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-xl text-white font-semibold transition-all">
+                                <i class="fa-brands fa-github text-xl"></i>
+                                <span>View Repository</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div> </div>
+</section> ```
+
+### ✅ 최종 확인 사항
+1.  **이미지 매칭**: 다시 한번 강조드리지만, 첨부하신 `image_e04978.png` 파일을 **`simulation_result.png`**로 이름을 바꿔서 `index.html`과 같은 폴더에 저장하셔야 합니다.
+2.  **닫는 태그**: 위 코드 마지막 부분에 있는 `</div>` 태그들이 기존 코드의 구조를 깨뜨리지 않도록 정확히 위치를 확인하고 붙여넣어 주세요.
+
+이렇게 하면 기존의 다른 프로젝트들 뒤에 **MIM-Ops Pro**가 대미를 장식하게 될 것입니다!
     <!-- EIGA Atomization -->
     <div class="max-w-5xl mx-auto px-6 pb-8">
         <h2 class="text-3xl font-bold text-center mb-6 text-white">Powder Atomization</h2>
