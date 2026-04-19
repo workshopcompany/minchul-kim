@@ -39,7 +39,6 @@
 </head>
 <body class="font-sans antialiased text-slate-300">
 
-    <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-lg z-50 border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="text-2xl font-bold tracking-tighter text-white">
@@ -55,7 +54,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <header class="pt-40 pb-24 px-6 max-w-5xl mx-auto text-center">
         <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-white">
             Hi, I'm <span class="gradient-text">Minchul Kim</span>
@@ -66,7 +64,6 @@
         </p>
     </header>
 
-    <!-- About -->
     <section id="about" class="section-padding bg-slate-900/80">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-bold mb-10 text-white flex items-center gap-4">
@@ -93,12 +90,10 @@
         </div>
     </section>
 
-    <!-- Professional Experience -->
     <section id="experience" class="section-padding max-w-5xl mx-auto">
         <h2 class="text-4xl font-bold mb-12 text-white text-center">Professional Experience</h2>
         
         <div class="space-y-16">
-
             <div>
                 <div class="flex justify-between items-start mb-4">
                     <div>
@@ -162,14 +157,11 @@
         </div>
     </section>
 
-    <!-- Key Projects -->
     <section id="projects" class="section-padding bg-slate-900/80">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold mb-12 text-white text-center">Key Technical Projects</h2>
 
-            <div class="grid md:grid-cols-2 gap-10">
-
-                <!-- Pure Al MIM -->
+            <div class="grid md:grid-cols-2 gap-10 mb-16">
                 <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
                     <div class="p-6 bg-slate-900">
                         <div class="grid grid-cols-2 gap-4 mb-4">
@@ -183,27 +175,24 @@
                         <h3 class="text-2xl font-bold mt-4 mb-3 text-white">High-Density Pure Al MIM (99.5%)</h3>
                         <p class="text-slate-400 mb-6">
                             Developed additive-free 99.5% pure aluminum MIM process achieving <strong>≥97% relative density</strong> at industrial batch scales (20–160 kg). 
-                            Significant <strong>cost reduction</strong> compared to CNC-machined copper.
                         </p>
                         <ul class="text-sm space-y-3 text-slate-400">
-                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Kinetic-mechanical oxide disruption via super-solidus liquid phase sintering (SLPS)</li>
-                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Excellent thermal conductivity (~228 W/m·K) and post-process compatibility (anodizing, laser/rod welding)</li>
-                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Applied to high-end camera module cases and high-performance heat dissipation materials for EV/ADAS</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Kinetic-mechanical oxide disruption via SLPS</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Excellent thermal conductivity (~228 W/m·K)</li>
+                            <li class="flex gap-3"><span class="text-emerald-400">•</span> Applied to EV/ADAS camera modules and heat dissipation parts</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Ti-Fe MIM -->
                 <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 card-hover">
                     <div class="p-6 bg-slate-900 flex items-center justify-center">
                         <img src="images/Ti-mim.png" alt="Ti MIM Components" class="rounded-2xl shadow-2xl max-h-80">
                     </div>
                     <div class="p-8">
                         <span class="px-3 py-1 bg-violet-500/10 text-violet-400 text-xs font-bold rounded-full">Titanium Alloy</span>
-                        <h3 class="text-2xl font-bold mt-4 mb-3 text-white">High-Density Ti-Fe MIM <span class="text-emerald-400">(without HIP or external hydrogen)</span></h3>
+                        <h3 class="text-2xl font-bold mt-4 mb-3 text-white">High-Density Ti-Fe MIM</h3>
                         <p class="text-slate-400 mb-6">
-                            Cost-effective titanium MIM process achieving <strong>≥97% relative density</strong> at 24 kg batch scale using TiH₂-Fe blends. 
-                            Substantial <strong>cost reduction</strong> versus traditional gas-atomized spherical powders.
+                            Cost-effective titanium MIM process achieving <strong>≥97% relative density</strong> without HIP using TiH₂-Fe blends. 
                         </p>
                         <ul class="text-sm space-y-3 text-slate-400">
                             <li class="flex gap-3"><span class="text-emerald-400">•</span> In-situ dehydrogenation + transient liquid phase sintering</li>
@@ -213,96 +202,106 @@
                     </div>
                 </div>
             </div>
+
+            <div class="bg-slate-800/50 rounded-3xl p-8 md:p-12 border border-slate-700 card-hover transition-all">
+                <div class="flex flex-col lg:flex-row items-start gap-12">
+                    
+                    <div class="lg:w-2/5 flex flex-col justify-center text-left">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Free Professional Tool</span>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cloud Native</span>
+                        </div>
+                        
+                        <h3 class="text-3xl md:text-5xl font-bold mb-6 gradient-text">MOLDIQ & MIM-Ops Pro</h3>
+                        
+                        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                            I have developed <strong>MOLDIQ</strong>, a comprehensive development toolkit for injection molding, designed for seamless compatibility with <strong>MIM-Ops Pro v1.0</strong>. By leveraging OpenFOAM and cloud computing, this ecosystem offers professional-grade flow simulation directly in your browser—completely free of charge.
+                        </p>
+                        
+                        <p class="text-slate-400 text-md mb-8">
+                            While MIM-Ops Pro provides high-fidelity flow simulations, MOLDIQ expands your capabilities beyond simple filling analysis, enabling analysis of complex mold structures (parting lines, slides), evaluating thermal/pressure distributions, and predicting potential defects.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="https://openfoam-injection-automation.streamlit.app/" 
+                               target="_blank"
+                               class="flex-1 inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 px-6 py-4 rounded-xl text-white font-bold transition-all shadow-lg shadow-blue-900/40 transform hover:scale-105">
+                                <i class="fa-solid fa-play text-lg"></i>
+                                <span>MIM-Ops Pro App</span>
+                            </a>
+                            <a href="https://moldiq-9rhzjfe6tmx8amj82ek2cw.streamlit.app/" 
+                               target="_blank"
+                               class="flex-1 inline-flex items-center justify-center gap-3 bg-slate-700 hover:bg-slate-600 px-6 py-4 rounded-xl text-white font-bold transition-all border border-slate-500 transform hover:scale-105">
+                                <i class="fa-solid fa-screwdriver-wrench text-lg"></i>
+                                <span>MOLDIQ Tools</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-3/5 space-y-4">
+                        <div class="relative group">
+                            <img src="images/simulation_result.png" alt="MIM-Ops Flow Simulation" class="rounded-2xl shadow-2xl border border-slate-600 w-full h-auto object-cover">
+                            <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-lg text-xs text-white">Filling Analysis (OpenFOAM)</div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="relative">
+                                <img src="images/simulation_result_pressure.png" alt="Pressure Distribution" class="rounded-xl shadow-lg border border-slate-600 w-full">
+                                <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white font-medium uppercase">Pressure Distribution</div>
+                            </div>
+                            <div class="relative">
+                                <img src="images/simulation_result_temp.png" alt="Temperature Distribution" class="rounded-xl shadow-lg border border-slate-600 w-full">
+                                <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white font-medium uppercase">Thermal Mapping</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <!-- moldflow-simulation Projects -->
-<div class="grid grid-cols-1 justify-items-center mb-16">
-    <div class="bg-slate-800/50 rounded-3xl p-8 md:p-10 border border-slate-700 card-hover transition-all w-full max-w-6xl">
-        <div class="flex flex-col lg:flex-row items-center gap-10">
-            
-            <div class="lg:w-1/2 flex flex-col justify-center text-left">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Free Professional Tool</span>
-                    <span class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cloud Native</span>
-                </div>
-                
-                <h3 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">MIM-Ops Pro v3.0</h3>
-                
-                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                    I have developed a **Free-to-Use Flow Simulation App** specifically for the metal injection molding (MIM) industry. 
-                    By leveraging the power of OpenFOAM and Cloud computing, this tool provides professional-grade filling analysis directly in your browser. No expensive local hardware or complex setup is required.
-                </p>
 
-                <div class="mb-8 p-4 bg-slate-900/50 rounded-xl border border-slate-700">
-                    <p class="text-sm text-slate-500 italic mb-2">Try the live app here:</p>
-                    <a href="https://openfoam-injection-automation.streamlit.app/" 
-                       target="_blank" 
-                       class="text-blue-400 hover:text-blue-300 underline break-all font-mono text-sm">
-                        https://openfoam-injection-automation.streamlit.app/
-                    </a>
-                </div>
-                
-                <div class="flex justify-start">
-                    <a href="https://openfoam-injection-automation.streamlit.app/" 
-                       target="_blank"
-                       class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 px-8 py-4 rounded-xl text-white font-bold transition-all shadow-lg shadow-blue-900/40 transform hover:scale-105">
-                        <i class="fa-solid fa-chart-line text-xl"></i>
-                        <span>Launch Free Simulation App</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="lg:w-1/2">
-                <img src="images/simulation_result.png" alt="MIM-Ops Simulation" class="rounded-2xl shadow-2xl border border-slate-600 w-full h-auto object-cover">
-            </div>
-
-        </div>
-    </div>
-</div>
-    <!-- EIGA Atomization -->
-    <div class="max-w-5xl mx-auto px-6 pb-8">
-        <h2 class="text-3xl font-bold text-center mb-6 text-white">Powder Atomization</h2>
+    <div class="max-w-5xl mx-auto px-6 pb-24">
+        <h2 class="text-3xl font-bold text-center mb-8 text-white">Powder Atomization</h2>
         <div class="max-w-3xl mx-auto">
             <img src="images/EIGA Atomization.png" alt="EIGA Atomization Process" class="rounded-3xl shadow-2xl mx-auto w-full">
         </div>
     </div>
 
-    <!-- Patents & Publications -->
-    <section id="research" class="section-padding bg-slate-900/80 max-w-5xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 text-white text-center">Patents & Publications</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-amber-400">
-                    <i class="fa-solid fa-certificate"></i> Patents (5 Granted in Korea)
-                </h3>
-                <div class="space-y-6 text-sm">
-                    <div class="border-l-2 border-amber-400 pl-6">KR10-1626878 (2016) — Binder Composition for Metal Injection Molding</div>
-                    <div class="border-l-2 border-amber-400 pl-6">KR10-1649584 (2016) — Heat-resistant Parts Using Metal Granule Powder</div>
-                    <div class="border-l-2 border-amber-400 pl-6">KR10-1522440 (2015) — Method for Joining Ceramic Materials</div>
-                    <div class="border-l-2 border-amber-400 pl-6">KR10-1434971 (2014) — Al₂O₃ Composite Nozzle for Spinning Processing</div>
-                    <div class="border-l-2 border-amber-400 pl-6">KR10-1218968 (2013) — Anode Material for Solid Oxide Fuel Cells</div>
+    <section id="research" class="section-padding bg-slate-900/80">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-white text-center">Patents & Publications</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-amber-400">
+                        <i class="fa-solid fa-certificate"></i> Patents (5 Granted in Korea)
+                    </h3>
+                    <div class="space-y-6 text-sm">
+                        <div class="border-l-2 border-amber-400 pl-6">KR10-1626878 (2016) — Binder Composition for Metal Injection Molding</div>
+                        <div class="border-l-2 border-amber-400 pl-6">KR10-1649584 (2016) — Heat-resistant Parts Using Metal Granule Powder</div>
+                        <div class="border-l-2 border-amber-400 pl-6">KR10-1522440 (2015) — Method for Joining Ceramic Materials</div>
+                        <div class="border-l-2 border-amber-400 pl-6">KR10-1434971 (2014) — Al₂O₃ Composite Nozzle for Spinning Processing</div>
+                        <div class="border-l-2 border-amber-400 pl-6">KR10-1218968 (2013) — Anode Material for Solid Oxide Fuel Cells</div>
+                    </div>
                 </div>
-            </div>
 
-            <div>
-                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-sky-400">
-                    <i class="fa-solid fa-book"></i> Publication
-                </h3>
-                <div class="bg-slate-800 p-8 rounded-3xl">
-                    <p class="italic">"Fabrication of anode support for solid oxide fuel cell using zirconium hydroxide as a pore former"</p>
-                    <p class="text-sm text-slate-400 mt-6">Journal of Power Sources 195 (2010)</p>
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 text-sky-400">
+                        <i class="fa-solid fa-book"></i> Publication
+                    </h3>
+                    <div class="bg-slate-800 p-8 rounded-3xl">
+                        <p class="italic">"Fabrication of anode support for solid oxide fuel cell using zirconium hydroxide as a pore former"</p>
+                        <p class="text-sm text-slate-400 mt-6">Journal of Power Sources 195 (2010)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section-padding bg-slate-900/80 text-center">
-        <div class="max-w-2xl mx-auto">
+    <section id="contact" class="section-padding bg-slate-950">
+        <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-6 text-white">Get In Touch</h2>
             <p class="text-slate-400 mb-12">
-                Interested in collaboration on advanced MIM/CIM, ADAS camera cases, high specific strength & non-magnetic materials, high-performance heat dissipation materials, lightweight components, or battery materials?
+                Interested in collaboration on advanced MIM/CIM, ADAS camera cases, or high-performance materials?
             </p>
             
             <div class="flex flex-col items-center gap-8">
@@ -311,7 +310,6 @@
                 </a>
                 <p class="text-2xl text-slate-400">+1 (302) 490-8503</p>
 
-                <!-- 버튼 영역 -->
                 <div class="flex flex-wrap gap-4 justify-center">
                     <a href="https://www.linkedin.com/in/minchul-kim-138997356" 
                        target="_blank"
