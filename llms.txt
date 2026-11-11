@@ -1,0 +1,51 @@
+# Minchul Kim
+
+> Minchul Kim is an Advanced Materials Engineer specializing in Metal Injection
+> Molding (MIM) and Ceramic Injection Molding (CIM). This site is his professional
+> portfolio: career history, technical projects, patents, publications, and
+> contact information.
+
+## Pages
+
+- [Home](https://workshopcompany.github.io/minchul-kim/): Professional summary, experience, key projects, patents and publications, contact
+- [CV (PDF)](https://workshopcompany.github.io/minchul-kim/CV(Minchul%20Kim)01222026.pdf): Curriculum vitae
+
+## About
+
+Advanced Materials Engineer specialized in Metal Injection Molding (MIM) and
+Ceramic Injection Molding (CIM). Expert in formulating and scaling
+high-solid-loading (45-67 vol%) feedstocks for complex, high-performance
+components. Experience includes greenfield facility setup, yield improvement,
+and regulatory clearance (IATF 16949, ISO 13485, FDA, CE), and development of
+advanced materials including Titanium and pure Aluminum for EV/ADAS and medical
+applications.
+
+## Experience
+
+- Plant General Manager, MIM Production Line — AUFlex Co., Ltd., Korea (Jul 2020 - Jun 2023)
+- Medical Device Development Team Senior Engineer — Dentium / Genoss / Artificial Organ Research Center, Korea (Mar 2018 - Jul 2020)
+- Mass Development Team Leader — Korea PIM Co., Ltd., Tier-1 supplier to Hyundai Motor Group (Nov 2013 - Mar 2018)
+- R&D Team Leader, Precision Components — Ceratrac Co., Ltd., Korea (Apr 2011 - Nov 2013)
+
+## Key Projects
+
+- High-Density Pure Al MIM (99.5%): additive-free pure aluminum MIM process achieving >=97% relative density at industrial batch scales (20-160 kg)
+- High-Density Ti-Fe MIM: cost-effective titanium MIM process achieving >=97% relative density without HIP using TiH2-Fe blends
+- MOLDIQ and MIM-Ops Pro: free, cloud-native injection molding toolkit. MOLDIQ supports filling analysis, mold structure analysis, thermal and pressure distribution, defect prediction, dimensional prediction, and reverse design. MIM-Ops Pro delivers OpenFOAM flow simulation in the browser.
+  - [MOLDIQ](https://moldiq-9rhzjfe6tmx8amj82ek2cw.streamlit.app/)
+  - [MIM-Ops Pro](https://openfoam-injection-automation.streamlit.app/)
+- MetalAtom: open-source gas atomizer simulator (EIGA) that finds process conditions for metal powder atomization, built from five years of hands-on EIGA experience
+  - [MetalAtom on GitHub](https://github.com/workshopcompany/MetalAtom)
+
+## Patents and Publications
+
+- 5 Korean patents granted (2013-2016), including a high-loading MIM binder system and a binder composition for metal injection molding
+- "Fabrication of anode support for solid oxide fuel cell using zirconium hydroxide as a pore former", Journal of Power Sources 195 (2010)
+
+## Contact
+
+- Email: kimminchulyo@gmail.com
+- Phone: +1 (302) 490-8503
+- [LinkedIn](https://www.linkedin.com/in/minchul-kim-138997356)
+- [GitHub](https://github.com/workshopcompany)
+- [AI Projects](https://workshopcompany.github.io/AI-Projects/)
